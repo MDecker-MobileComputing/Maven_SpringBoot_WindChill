@@ -7,6 +7,11 @@ package de.eldecker.dhbw.spring.windchill;
 @SuppressWarnings("serial")
 public class WindChillException extends Exception {
 
+	/**
+	 * Konstruktor
+	 * 
+	 * @param fehlerText Beschreibung des Fehlers
+	 */
 	public WindChillException( String fehlerText ) {
 		
 		super( fehlerText );

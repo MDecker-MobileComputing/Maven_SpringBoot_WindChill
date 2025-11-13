@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>REST-API für Berechnung Windchill-Temperatur</title>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="windchill-styles.css">
+</head>
+<body>
+
+  <h1>REST-API für Berechnung Windchill-Temperatur</h1>
+
+  <ul>
+    <li><a href="http://localhost:8080/windchill/v1/berechnung?pt=1&amp;wg=15"  > 1° Celsius und 15 km/h Windgeschwindigkeit</a></li>
+    <li><a href="http://localhost:8080/windchill/v1/berechnung?pt=1&amp;wg=25"  > 1° Celsius und 25 km/h Windgeschwindigkeit</a></li>
+    <li><a href="http://localhost:8080/windchill/v1/berechnung?pt=5&amp;wg=35"  > 5° Celsius und 35 km/h Windgeschwindigkeit</a></li>
+    <li><a href="http://localhost:8080/windchill/v1/berechnung?pt=30&amp;wg=25" >30° Celsius (illegale Temperatur)</a></li>
+  </ul>
+
+</body>

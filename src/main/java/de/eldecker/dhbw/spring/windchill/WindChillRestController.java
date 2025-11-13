@@ -38,7 +38,7 @@ public class WindChillRestController {
 
 
 	/**
-	 * Methode für HTTP-GET-Endpunkt, um eine Berechnung der WindChill-Temperatur durchzugeführen.
+	 * Methode für HTTP-GET-Endpunkt, um eine Berechnung der WindChill-Temperatur durchzuführen.
 	 * <br><br>
 	 *
 	 * Beispiel-URL für lokalen Aufruf (physische Temperatur 1° Celsius und

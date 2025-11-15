@@ -37,17 +37,18 @@ public class WindChillLogik {
 		if ( physTemperatur < -50.0 || physTemperatur > 10.0 ) {
 			
 			final String fehlerText = 
-					"Physische Temperatur " + physTemperatur + " Grad Celsius ausserhalb Bereich -50.0 und 10.0 Grad Celsius.";
+					"Physische Temperatur " + physTemperatur + 
+					" Grad Celsius ausserhalb Bereich -50.0 und 10.0 Grad Celsius.";
 			
 			LOG.error( fehlerText );
 			
 			throw new WindChillException( fehlerText ); 
-					 
 		}
 		if ( windgeschwindigkeit < 5.0 || windgeschwindigkeit > 60.0 ) {
 
 			final String fehlerText = 
-					"Windgeschwindigkeit " + windgeschwindigkeit + " km/h ausserhalb Bereich 5.0 km/h und 60 km/h.";
+					"Windgeschwindigkeit " + windgeschwindigkeit + 
+					" km/h ausserhalb Bereich 5.0 km/h und 60 km/h.";
 			
 			LOG.error( fehlerText );
 			

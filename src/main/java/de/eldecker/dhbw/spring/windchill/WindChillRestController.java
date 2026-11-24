@@ -66,9 +66,11 @@ public class WindChillRestController {
 	 *
 	 * Diese Methode sollte nur Code enthalten, der HTTP-spezifisch ist!
 	 *
-	 * @param physTemperatur URL-Parameter mit physischer Temperatur
+	 * @param physTemperatur URL-Parameter mit physischer Temperatur in Grad Celsius,   
+	 *                       muss im Bereich -50.0 Grad und 10.0 Grad liegen
 	 *
-	 * @param windgeschwindigkeit URL-Parameter mit Windgeschwindigkeit
+	 * @param windgeschwindigkeit URL-Parameter mit Windgeschwindigkeit im km/h,  
+	 *                            muss innerhalb 5.0 km/h und 60 km/h sein
 	 *
 	 * @return Ergebnis der Berechnung; das enthaltene {@code ErgebnisRecord}-Objekt
 	 *         wird automatisch nach JSON umgewandelt.

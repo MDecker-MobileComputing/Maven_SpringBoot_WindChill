@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class WindChillRestController {
 
 	private static Logger LOG = LoggerFactory.getLogger( WindChillRestController.class );
+	
 
 	/** Objekt mit eigentlicher Berechnungslogik, wird über Konstruktor-Injection bereitgestellt. */
 	private WindChillLogik _windChillLogik;
@@ -54,7 +55,7 @@ public class WindChillRestController {
 	 *    "windgeschwindigkeit"    : 25.0,
 	 *    "gefuehlteTemperatur"    : -4.0
 	 * }
-	 * <pre>
+	 * </pre>
 	 *
 	 * Die folgende Beispiel-URL enthält eine unzulässige Temperatur, deshalb
 	 * wird bei ihrem Aufruf eine Exception geworfen:
@@ -89,10 +90,9 @@ public class WindChillRestController {
 
 		final ErgebnisRecord ergebnis = new ErgebnisRecord( physTemperatur,
 											                windgeschwindigkeit,
-											                gefuehlteTemperatur
-											              );
+											                gefuehlteTemperatur );											              
 		
-		LOG.info( "Windchill-Temperatur berechnet: {}" ,ergebnis );
+		LOG.info( "Windchill-Temperatur berechnet: {}", ergebnis );
 
 		return ResponseEntity.status( OK ).body( ergebnis );
 	}

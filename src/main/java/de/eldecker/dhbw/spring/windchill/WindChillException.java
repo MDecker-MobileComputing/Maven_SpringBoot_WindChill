@@ -8,7 +8,7 @@ package de.eldecker.dhbw.spring.windchill;
 public class WindChillException extends Exception {
 
 	/**
-	 * Konstruktor
+	 * Konstruktor.
 	 * 
 	 * @param fehlerText Beschreibung des Fehlers
 	 */
